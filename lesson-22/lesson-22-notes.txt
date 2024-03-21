@@ -1,0 +1,7 @@
+HTML "defer" attribute in <script> tag
+
+HTML CODE: <script defer src="main.js"></script>
+The defer attribute in a <script> tag tells the browser to wait until the HTML document
+is fully parsed before executing the JavaScript code in the specified file. 
+This means that the script will be loaded asynchronously, but it won't execute until 
+the HTML parsing is complete.
