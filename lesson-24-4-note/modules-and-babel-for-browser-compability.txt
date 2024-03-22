@@ -1,0 +1,7 @@
+Modern browsers have varying levels of support for ES6 modules. 
+To ensure compatibility across different browsers, developers 
+often use tools like Babel, which transpile newer versions of 
+JavaScript into older ones that are supported by a wider range of browsers.
+
+This allows developers to take advantage of the latest JavaScript features while
+still ensuring that their code works correctly across different environments.

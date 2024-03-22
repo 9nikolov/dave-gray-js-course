@@ -1,0 +1,41 @@
+<!-- This code is provided by Dave Gray -->
+<!-- The purpose is to help learn DOM via JS -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 24-1</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- The "model" attribute tells our app that we are going to be using modules  
+         Also we dont need the "defer" attribute anymore, because the "module" attribute
+         includes that too by default.
+         IMPORTANT: strict mode is enabled in all our JS files, when we import them
+         with the script tag and it has the "model" attribute -->
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <nav>
+      <h1>My Page</h1>
+    </nav>
+    <main>
+      <section id="view1" class="view view1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+      </section>
+      <section id="view2" class="view view2">
+        <h2>My 2nd View</h2>
+      </section>
+    </main>
+  </body>
+</html>

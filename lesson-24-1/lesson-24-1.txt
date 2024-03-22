@@ -1,0 +1,62 @@
+JavaScript Modules
+
+1. HTML Script Tag:
+
+    1.1. Use the "module" attribute in the script tag: 
+        <script type="module" src="js/main.js"></script>.
+    
+    1.2. Note: The "module" attribute replaces the need for "defer" attribute.
+         Clarification: Strict mode is enabled by default when importing modules with the "module" attribute.
+
+2. JavaScript Module Creation
+
+    2.1. First Way of Exporting
+
+        const playGuitar = () => {
+            return "playing guitar";
+        }
+
+        const shredding = () => {
+            return "Shredding some licks!";
+        }
+
+        const plucking = () => {
+            return "Plucking the strings...";
+        }
+
+    export default playGuitar;
+    export {shredding, plucking};
+
+    2.2. Second Way of Exporting
+
+        export default function playGuitar2() {
+            return "playing guitar";
+        }
+
+        export const shredding2 = () => {
+            return "Shredding some licks!";
+        }
+
+        export const plucking2 = () => {
+            return "Plucking the strings...";
+        }
+
+
+3. JavaScript Importing Modules + Renaming Named Exports + (NOT POSSIBLE) Renaming Default Export
+    
+    JavaScript expects each module to have a unique "Default Export" name.
+    If this is not the case you will need to refactor the modules themselves,
+    to ensure there is no overlap.
+
+        3.1. Syntax when importing default export:
+            import playGuitar from './guitars.js';
+
+        3.2. Syntax when importing named export/exports:
+            import {shredding, plucking} from './guitars.js';
+
+        3.3. Renaming Named Export:
+            // Imagine a scenario where two members of your team create different modeles
+            // but these modules happen to have functions that have identical names
+            // In order to prevent code conflicts we can rename one of them during the
+            // import, without changing its actual file name.
+            import {shredding as shredPaper} from './paper-shredder.js';
