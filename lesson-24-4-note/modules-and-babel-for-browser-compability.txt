@@ -1,3 +1,6 @@
+#Lesson 24-4: 
+##JavaScript Modules Browser Compatibility
+
 Modern browsers have varying levels of support for ES6 modules. 
 To ensure compatibility across different browsers, developers 
 often use tools like Babel, which transpile newer versions of 
