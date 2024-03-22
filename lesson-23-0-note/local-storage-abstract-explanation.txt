@@ -1,0 +1,15 @@
+1. Local Storage is not shared between different websites;
+rather, each website has its own separate section of Local Storage on your computer.
+Each website can only access the data it has stored in its own Local Storage.
+This is a security feature implemented by web browsers to prevent 
+cross-site scripting (XSS) attacks and maintain user privacy. 
+Therefore, data stored by one website in its Local Storage 
+cannot be accessed by another website.
+
+2. VERY ABSTRACT EXPLANATION OF LOCAL STORAGE:
+    local storage looks something like this:
+
+        Local Storage Main Container:
+        local storage sub container for website 1
+        local storage sub container for website 2
+        local storage sub container for website 3
