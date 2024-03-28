@@ -1,0 +1,82 @@
+QUESTION: 
+
+please explain how this code works
+
+how does .then(), know that the value parameter is the result of the promise,
+and how does .catch() know that the parameter is the error
+======================================================================
+======================================================================
+======================================================================
+
+QUESTION CODE:
+======================================================================
+======================================================================
+======================================================================
+const myPromise = new Promise((resolve, reject) => {
+  const error = false;
+  if (error === false) {
+    resolve("Yes! Resolved Promise!");
+  } else {
+    reject("No! Rejected Promise!");
+  }
+});
+
+console.log(myPromise);
+
+myPromise
+  .then((value) => {
+    return value + 1;
+  })
+  .then((value2) => {
+    console.log(value2);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
+
+ANSWER:
+======================================================================
+======================================================================
+======================================================================
+
+In this code, a Promise is created using the new Promise() constructor. 
+Inside this constructor, there's a function with resolve and reject parameters. 
+When the Promise is created and executed, it either resolves (succeeds) or rejects (fails) based on certain conditions.
+
+Let's break down how the code works step by step:
+
+A Promise myPromise is created with a callback function that takes two parameters, resolve and reject.
+
+Inside the callback function, there's a condition (if statement) that checks if error is false. 
+In this example, error is always false, so the Promise always resolves.
+
+If the condition is true (error === false), resolve is called with the string "Yes! Resolved Promise!",
+indicating that the Promise has succeeded.
+
+If the condition is false, reject is called with the string "No! Rejected Promise!",
+indicating that the Promise has failed.
+
+The Promise myPromise is logged to the console.
+
+.then() is used to handle the resolved Promise. When the Promise is resolved, .then() takes a callback function as its argument.
+This callback function will be called with the resolved value, which in this case is "Yes! Resolved Promise!".
+
+Inside the first .then() callback function, the resolved value ("Yes! Resolved Promise!") is received as the parameter value. 
+Then, "Yes! Resolved Promise!" is concatenated with 1, which implicitly converts the number to a string,
+resulting in "Yes! Resolved Promise!1".
+
+The result of the first .then() callback ("Yes! Resolved Promise!1") is automatically passed to
+the next .then() callback as its parameter (value2).
+
+Inside the second .then() callback function, value2 (which is "Yes! Resolved Promise!1") is logged to the console.
+
+If there was an error during the execution of the Promise (which doesn't happen in this example),
+.catch() would be called instead of .then(). .catch() takes a callback function that receives
+the error as its parameter. In this case, since there's no error, the .catch() block is not executed.
+
+So, to answer your question, .then() knows that its parameter represents the 
+resolved value of the Promise because it automatically receives the resolved value as 
+an argument when the Promise resolves. Similarly, .catch() knows that its parameter represents the error
+because it automatically receives the error as an argument when the Promise rejects.
+This behavior is built into the Promise mechanism in JavaScript.
