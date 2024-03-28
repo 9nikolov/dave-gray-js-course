@@ -35,8 +35,12 @@ functionA(param, function () {
 */
 
 // 2. Promises
-// IMPORTANT: to fully understand the code example read ("promises-then-catch-explained.txt")
 // Promises can have 3 states: Pending, Fulfilled, Rejected
+
+// 2.1. Demonstrating Promises:
+// I. Creating a Promise that always get Fulfilled successfully
+// II. Handling the Fulfilled Promise using .then() and .catch() methods
+// IMPORTANT: For a detailed explanation, refer to "promises-then-catch-explained.txt"
 
 const myPromise = new Promise((resolve, reject) => {
   const error = false;
