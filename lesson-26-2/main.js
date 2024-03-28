@@ -2,14 +2,8 @@
 // Callbacks, Promises, Thenables, Async/Await
 
 // 2. Promises
-// Promises can have 3 states
-// - Pending: Initial state, before the promise succeeds or fails.
-// - Fulfilled: The operation completed successfully.
-// - Rejected: The operation failed.
 
-// 2.1. Promises Example 1 (refer to "lesson-26-1")
-
-// 2.1. Promises Example 2:
+// 2.2. Promises Example 2: Promises and Asynchronous Programming
 // In this example, we'll explore how Promises are used in real-world web applications.
 // Imagine you're building a website that needs to fetch data from multiple sources, like different servers through APIs.
 // We'll simulate this scenario by creating two Promises:

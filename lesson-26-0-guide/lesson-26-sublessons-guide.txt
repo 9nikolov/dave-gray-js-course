@@ -1,0 +1,17 @@
+Lesson 26-1
+// 0. Summary of the Evolution of Asynchronous Operations in JavaScript:
+// 1.1.1. Callbacks - functions that are passed as parameters to other functions
+// 1.1.2. Example of "Callback Function":
+// 1.2.1. "Callback Hell"
+// 1.3. Example of "Callback Hell":
+// 2. Promises can have 3 States (Pending, Fullfilled, Rejected)
+// 2.1. Promises Example 1: Creating a Promise & Handling it using .then() and .catch()
+
+Lesson 26-2
+// 2.2. Promises Example 2: Promises and Asynchronous Programming
+
+Lesson 26-3
+// 2.3. Promises Example 3: Fetching Data 
+
+Lesson 26-4
+// 2.4. Promises Example 4: Common Promise Mistake
