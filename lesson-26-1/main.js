@@ -35,9 +35,12 @@ functionA(param, function () {
 */
 
 // 2. Promises
-// Promises can have 3 states: Pending, Fulfilled, Rejected
+// Promises can have 3 states:
+// - Pending: Initial state, before the promise succeeds or fails.
+// - Fulfilled: The operation completed successfully.
+// - Rejected: The operation failed.
 
-// 2.1. Demonstrating Promises:
+// 2.1. Promises Example 1:
 // I. Creating a Promise that always get Fulfilled successfully
 // II. Handling the Fulfilled Promise using .then() and .catch() methods
 // IMPORTANT: For a detailed explanation, refer to "promises-then-catch-explained.txt"
@@ -63,3 +66,5 @@ myPromise
   .catch((err) => {
     console.log(err);
   });
+
+// 2.1. Promises Example 2 (refer to "lesson-26-2")
